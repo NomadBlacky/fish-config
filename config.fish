@@ -5,7 +5,7 @@ alias l='ls -CF'
 
 #rbenv
 set -x PATH $HOME/.rbenv/bin $PATH
-rbenv init - | source
+rbenv init - fish | source
 
 alias e="emacsclient ."
 set -x PATH $HOME/.cask/bin $PATH
