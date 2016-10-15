@@ -14,3 +14,4 @@ alias emacs='emacs -nw'
 set -x PATH $HOME/bin/activator-dist-1.3.10/bin $PATH
 alias gitcm="git commit -m"
 set -x PATH $HOME/.conscript/bin $PATH
+set -x EDITOR 'emacs -q -nw'
