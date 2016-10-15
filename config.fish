@@ -13,4 +13,8 @@ alias gits="git status"
 alias emacs='emacs -nw'
 set -x PATH $HOME/bin/activator-dist-1.3.10/bin $PATH
 alias gitcm="git commit -m"
+alias gitf="git fetch"
+alias gitpu="git push"
+alias gitd="git diff"
+alias gitadda="git add --all"
 set -x PATH $HOME/.conscript/bin $PATH
