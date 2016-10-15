@@ -18,3 +18,4 @@ alias gitpu="git push"
 alias gitd="git diff"
 alias gitadda="git add --all"
 set -x PATH $HOME/.conscript/bin $PATH
+set -x EDITOR 'emacs -q -nw'
