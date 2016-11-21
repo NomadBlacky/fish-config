@@ -19,3 +19,4 @@ alias gd="git diff"
 alias gadda="git add --all"
 set -x PATH $HOME/.conscript/bin $PATH
 set -x EDITOR 'emacs -q -nw'
+set -x PATH $HOME/.evm/bin $PATH
