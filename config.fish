@@ -20,3 +20,6 @@ alias gadda="git add --all"
 set -x PATH $HOME/.conscript/bin $PATH
 set -x EDITOR 'emacs -q -nw'
 set -x PATH $HOME/.evm/bin $PATH
+
+# Load local functions.
+#find $HOME/.config/fish/functions/local -type f -name '*.fish' | xargs -I% source %
