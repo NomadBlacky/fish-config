@@ -23,6 +23,9 @@ set -x PATH $HOME/.evm/bin $PATH
 set -x GOPATH $HOME/.go
 set -x PATH $GOPATH/bin $PATH
 
+# Bindings
+bind \cr peco_select_hisotry
+
 # Load local functions.
 for file in $HOME/.config/fish/functions/local/*.fish
   source $file
