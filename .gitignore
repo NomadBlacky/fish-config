@@ -1,3 +1,4 @@
 fishd*
-functions/local/*
+/functions/local/*
+/tmp/*
 !.gitkeep
