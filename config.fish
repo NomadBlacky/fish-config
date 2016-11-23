@@ -20,6 +20,8 @@ alias gitadda="git add --all"
 set -x PATH $HOME/.conscript/bin $PATH
 set -x EDITOR 'emacs -q -nw'
 set -x PATH $HOME/.evm/bin $PATH
+set -x GOPATH $HOME/.go
+set -x PATH $GOPATH/bin $PATH
 
 # Load local functions.
 for file in $HOME/.config/fish/functions/local/*.fish
