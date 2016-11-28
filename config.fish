@@ -10,7 +10,7 @@ rbenv init - fish | source
 set -x PATH $HOME/.cask/bin $PATH
 set -x PATH $HOME/bin/activator-dist-1.3.10/bin $PATH
 set -x PATH $HOME/.conscript/bin $PATH
-set -x EDITOR 'emacs -q -nw'
+set -x EDITOR 'emacsclient -nw'
 set -x PATH $HOME/.evm/bin $PATH
 set -x GOPATH $HOME/.go
 set -x PATH $GOPATH/bin $PATH
