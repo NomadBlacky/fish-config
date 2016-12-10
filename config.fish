@@ -19,3 +19,7 @@ set -x PATH $GOPATH/bin $PATH
 for file in $HOME/.config/fish/functions/local/*.fish
   source $file
 end
+set -x PYENV_ROOT $HOME/.pyenv
+set -x PATH $PYENV_ROOT/bin $PATH
+. (pyenv init - | psub)
+. (pyenv virtualenv-init - | psub)
