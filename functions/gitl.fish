@@ -1,3 +1,3 @@
 function gitl
-	git log $argv
+	git log --graph $argv
 end
