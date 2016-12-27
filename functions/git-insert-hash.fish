@@ -1,4 +1,7 @@
 function git-insert-hash
-	git log --oneline $argv | peco | read l
-	commandline -i (echo $l | grep -o -P '^\w+')
+	set -e c
+    git log --oneline $argv | peco | read c
+    if [ $c ]
+        commandline -i (echo $c | grep -o -P '^\w+')
+    end
 end
