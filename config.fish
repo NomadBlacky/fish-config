@@ -15,6 +15,8 @@ set -x EDITOR 'emacsclient -nw'
 set -x PATH $HOME/.evm/bin $PATH
 set -x GOPATH $HOME/.go
 set -x PATH $GOPATH/bin $PATH
+set -x LESS '-R'
+set -x LESSOPEN '| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
 
 # Load local functions.
 for file in $HOME/.config/fish/functions/local/*.fish
