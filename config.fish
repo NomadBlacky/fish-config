@@ -1,7 +1,7 @@
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+# Load local functions.
+for file in $HOME/.config/fish/functions/local/*.fish
+  source $file
+end
 
 #rbenv
 set -x PATH $HOME/.rbenv/bin $PATH
@@ -17,11 +17,6 @@ set -x GOPATH $HOME/.go
 set -x PATH $GOPATH/bin $PATH
 set -x LESS '-R'
 set -x LESSOPEN '| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
-
-# Load local functions.
-for file in $HOME/.config/fish/functions/local/*.fish
-  source $file
-end
 set -x PYENV_ROOT $HOME/.pyenv
 set -x PATH $PYENV_ROOT/bin $PATH
 . (pyenv init - | psub)
