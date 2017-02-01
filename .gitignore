@@ -2,3 +2,4 @@ fishd*
 /functions/local/*
 /tmp/*
 !.gitkeep
+/fish_history
