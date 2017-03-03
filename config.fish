@@ -3,10 +3,6 @@ for file in $HOME/.config/fish/functions/local/*.fish
   source $file
 end
 
-#rbenv
-set -x PATH $HOME/.rbenv/bin $PATH
-rbenv init - fish | source
-
 set -x PATH $HOME/.cask/bin $PATH
 set -x PATH $HOME/bin/activator-dist-1.3.10/bin $PATH
 set -x CONSCRIPT_HOME $HOME/.conscript
