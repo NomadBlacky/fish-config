@@ -3,3 +3,4 @@ fishd*
 /tmp/*
 !.gitkeep
 /fish_history
+/config-local.fish
