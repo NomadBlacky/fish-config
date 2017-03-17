@@ -5,6 +5,13 @@ set -q XDG_DATA_HOME
 
 # Load Oh My Fish configuration.
 source $OMF_PATH/init.fish
+
+# Load local configurations
+set configlocal $HOME/.config/fish/config-local.fish
+if [ $configlocal ]
+    source $configlocal
+end
+
 # Load local functions.
 for file in $HOME/.config/fish/functions/local/*.fish
   source $file
