@@ -27,7 +27,3 @@ set -x GOPATH $HOME/.go
 set -x PATH $GOPATH/bin $PATH
 set -x LESS '-R'
 set -x LESSOPEN '| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
-set -x PYENV_ROOT $HOME/.pyenv
-set -x PATH $PYENV_ROOT/bin $PATH
-. (pyenv init - | psub)
-. (pyenv virtualenv-init - | psub)
