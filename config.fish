@@ -27,3 +27,10 @@ set -x GOPATH $HOME/.go
 set -x PATH $GOPATH/bin $PATH
 set -x LESS '-R'
 set -x LESSOPEN '| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[ -f /home/blacky/projects/oss/serverless/node_modules/tabtab/.completions/serverless.fish ]; and . /home/blacky/projects/oss/serverless/node_modules/tabtab/.completions/serverless.fish
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[ -f /home/blacky/projects/oss/serverless/node_modules/tabtab/.completions/sls.fish ]; and . /home/blacky/projects/oss/serverless/node_modules/tabtab/.completions/sls.fish
