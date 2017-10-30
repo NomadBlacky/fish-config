@@ -1,0 +1,1 @@
+/home/blacky/.config/fisherman/spin/completions/spin.fish
