@@ -27,3 +27,8 @@ set -x GOPATH $HOME/.go
 set -x PATH $GOPATH/bin $PATH
 set -x LESS '-R'
 set -x LESSOPEN '| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
+
+# Execute tmux
+if [ $SHLVL ]
+    tmux
+end
