@@ -1,0 +1,1 @@
+/home/blacky/.config/fisherman/z/functions/__zo.fish
