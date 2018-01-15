@@ -36,6 +36,6 @@ set -x LESSOPEN '| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
 [ -f /home/blacky/projects/oss/serverless/node_modules/tabtab/.completions/sls.fish ]; and . /home/blacky/projects/oss/serverless/node_modules/tabtab/.completions/sls.fish
 
 # Execute tmux
-if [ $SHLVL ]
+if [ $SHLVL -lt 2 ]
     tmux
 end
