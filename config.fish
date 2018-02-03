@@ -18,15 +18,15 @@ for file in $HOME/.config/fish/functions/local/*.fish
 end
 
 set -x PATH $HOME/.cask/bin $PATH
-set -x PATH $HOME/bin/activator-dist-1.3.10/bin $PATH
 set -x CONSCRIPT_HOME $HOME/.conscript
 set -x PATH $CONSCRIPT_HOME/bin $PATH
 set -x EDITOR 'emacsclient -nw'
 set -x PATH $HOME/.evm/bin $PATH
-set -x GOPATH $HOME/.go
-set -x PATH $GOPATH/bin $PATH
 set -x LESS '-R'
 set -x LESSOPEN '| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
+
+# Key bindings
+bind \cw sw-window
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
