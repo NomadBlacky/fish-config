@@ -1,11 +1,3 @@
-# Path to Oh My Fish install.
-set -q XDG_DATA_HOME
-and set -gx OMF_PATH "$XDG_DATA_HOME/omf"
-or set -gx OMF_PATH "$HOME/.local/share/omf"
-
-# Load Oh My Fish configuration.
-source $OMF_PATH/init.fish
-
 # Load local configurations
 set configlocal $HOME/.config/fish/config-local.fish
 if [ $configlocal ]
@@ -17,13 +9,7 @@ for file in $HOME/.config/fish/functions/local/*.fish
     source $file
 end
 
-set -x PATH $HOME/.cask/bin $PATH
-set -x CONSCRIPT_HOME $HOME/.conscript
-set -x PATH $CONSCRIPT_HOME/bin $PATH
 set -x EDITOR 'emacsclient -nw'
-set -x PATH $HOME/.evm/bin $PATH
-set -x LESS '-R'
-set -x LESSOPEN '| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
 
 # Key bindings
 bind \cw sw-window
