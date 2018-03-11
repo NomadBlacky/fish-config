@@ -1,6 +1,6 @@
 # Load local configurations
 set configlocal $HOME/.config/fish/config-local.fish
-if [ $configlocal ]
+if [ -e $configlocal ]
     source $configlocal
 end
 
