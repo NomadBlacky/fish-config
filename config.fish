@@ -22,6 +22,6 @@ bind \cw sw-window
 [ -f /home/blacky/projects/oss/serverless/node_modules/tabtab/.completions/sls.fish ]; and . /home/blacky/projects/oss/serverless/node_modules/tabtab/.completions/sls.fish
 
 # Execute tmux
-if [ $SHLVL -lt 2 ]
+if test $SHLVL -lt 2; and status --is-interactive
     tmux
 end
