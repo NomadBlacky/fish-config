@@ -8,6 +8,7 @@ function fish_user_key_bindings
     bind \eg git-insert-hash
     bind \eh backward-kill-word
     bind \el list-all-files-for-key-bindings
+    bind \em open-magit-for-key-bindings
 
     # Call original key bindings if existent
     #  functions -q __original_fish_user_key_bindings
