@@ -25,3 +25,9 @@ bind \cw sw-window
 if test $SHLVL -lt 2; and status --is-interactive
     tmux
 end
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[ -f /home/blacky/projects/nodejs/serverless/node_modules/tabtab/.completions/slss.fish ]; and . /home/blacky/projects/nodejs/serverless/node_modules/tabtab/.completions/slss.fish
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/blacky/google-cloud-sdk/path.fish.inc' ]; . '/home/blacky/google-cloud-sdk/path.fish.inc'; end
